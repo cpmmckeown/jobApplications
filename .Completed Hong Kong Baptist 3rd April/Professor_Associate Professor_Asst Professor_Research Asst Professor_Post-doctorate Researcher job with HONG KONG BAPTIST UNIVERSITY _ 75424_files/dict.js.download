@@ -1,0 +1,23 @@
+MADGEXi18n = {
+'AddToShortlist'      : "Save",
+'RemoveFromShortlist' : "Saved",
+'ChooseASector'       : "Choose a sector",
+'Any'                 : "Any",
+'SelectedPrepend'     : " ",
+'SelectedAppend'      : "selected",
+'Close'               : "Close",
+'Edit'                : "Edit",
+'Job'				  : "job",
+'Jobs'				  : "jobs",
+'Place'               : "place",
+'Places'              : "places",
+'Nearby'              : "nearby",
+'More'                : "More",
+'AjaxError'			  : "There was an error processing your request",
+'ConfirmRemove'		  : "Are you sure you want to remove this?",
+'Saving'			  : "Saving...",
+'showPlacesFurtherAway' : "Show places further away",
+'AlsoInclude'          : "Also include",
+'NearbyLocations'      : "Nearby locations",
+'NoLocationFound'      : "We\'re sorry, we couldn\'t find your location. Please ensure that you have enabled the geo-location option in your browser."
+};

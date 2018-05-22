@@ -1,0 +1,48 @@
+/*
+Available colours
+Job Title	 Model.JobTitleColour
+Job Headings Model.OtherHeadingColour
+Button Bkg	 Model.ButtonBackColour
+Button Text  Model.ButtonTextColour
+Hyperlink    Model.NavLinkColour
+*/
+
+.enhanced h1,
+.enhanced .h1 {
+	color: #444444;
+}
+.enhanced h2,
+.enhanced .h2,
+.enhanced h3,
+.enhanced .h3,
+.enhanced h4,
+.enhanced .h4,
+.enhanced h5,
+.enhanced .h5,
+.enhanced h6,
+.enhanced .h6 {
+	color: #444444;
+}
+.enhanced a,
+.enhanced input[type="submit"].linkesque,
+.enhanced .linkesque {
+	color: #0000BB;
+}
+.enhanced .button {
+	background: #CCCCCC;
+	color: #000000;
+}
+
+@media only screen and (max-width: 550px) {
+	.enhanced__banner {
+		margin-left: -4.3%;
+		margin-right: -4.3%;
+	}	
+}
+
+.enhanced .actions button {
+	background: none
+}
+.enhanced .social-buttons a {
+	color: #fff
+}

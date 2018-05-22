@@ -1,0 +1,248 @@
+/* 
+http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* HIDE */
+.direct_searchContainer, 
+#direct_shareDiv, 
+#direct_colophon,
+#direct_header h1#direct_mobileH1, 
+a.direct_mobileJumpLink,
+.direct_jobListingCompany,
+.direct_hiddenOption {
+	display: none;
+}
+body * {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+h3.direct_highlightedText, #direct_jobListingTitle {
+	border-bottom: 1px solid #eeeeee;
+	margin-bottom: 20px;
+}
+#direct_listingDiv {
+	width: calc(98% - 322px);
+	float: left;
+}
+ul.featured_jobListing {
+    background: #f2f2f2;
+    padding: 10px;
+}
+.featured_jobListing h4 {
+    background-repeat: no-repeat;
+    padding-left: 24px;
+}
+
+.featured_jobListing .direct_joblocation {
+    margin-left: 24px;
+}
+.featured_jobListing .direct_joblisting {
+    border-bottom: 1px solid #fff;
+}
+.featured_jobs_note {
+    float: right;
+    font-style: italic;
+    font-size: 90%;
+}
+#direct_disambiguationDiv, #direct_companyModule, #direct_applyDiv, #direct_shareDiv {
+	width: 322px;
+	float: right;
+	clear: right;
+}
+#direct_disambiguationDiv {
+    background: #f2f2f2;
+    padding: 0 2% 20px 2%;
+    line-height: 1.8;
+}
+#direct_disambiguationDiv h3 {
+	margin: 0 0 10px;
+	padding: 20px 0 0;
+	border-bottom: 1px solid #ddd;
+	font-size: 140%;
+	padding: 20px 0 10px;
+	line-height: 1;
+}
+#direct_jobListingTitle h3 .direct_highlightedText,
+h3.direct_highlightedText, 
+#direct_disambiguationDiv h3 {
+	font-size: 140%;
+}
+#direct_disambiguationDiv .direct_highlightedText {
+	padding: 0;
+}
+.direct_joblisting {
+	padding: 20px 0;
+	border-bottom: 1px solid #eee;
+}
+.more_less_links_container {
+	margin-top: 10px;
+	display: block;
+}
+.more_less_links_container a {
+	margin-right: 14px;
+}
+#direct_disambiguationDiv h3.minus-icon:after {
+	content: '';
+	font: normal normal normal 14px/1 FontAwesome;
+	content: "\f068";
+	float: right;
+	line-height: 2.6;
+}
+#direct_disambiguationDiv h3:after, #direct_disambiguationDiv h3.plus-icon:after {
+	content: '';
+	font: normal normal normal 14px/1 FontAwesome;
+	content: "\f067"; /* plus */
+	float: right;
+	line-height: 2.6;
+}
+.more_less_links_container {
+	margin-top: 10px;
+}
+.more_less_links_container a:before {
+	font: normal normal normal 14px/1 FontAwesome;
+	margin-right: 5px;
+	color: #666;
+	font-size: 16px;
+}
+a.direct_optionsMore:before {
+	content: '\f055';
+}
+a.direct_optionsLess:before {
+	content: '\f056';
+}
+a.direct_optionsLess {
+	display: none;
+}
+#direct_disambiguationDiv ul#direct_searchOptions {
+	display: block;
+}
+#direct_disambiguationDiv #direct_searchOptions a {
+	line-height: 1.6;
+	display: inline-block;
+	margin: 0 0 3px 0;
+	color: white;
+	padding: 0 10px 0 5px;
+	border-radius: 3px;
+}
+#direct_searchOptions a:before {
+	font: normal normal normal 14px/1 FontAwesome;
+	margin-right: 5px;
+	color: #fff;
+	font-size: 16px;
+}
+#direct_searchOptions a:before {
+	content: '\f057';
+}
+#direct_listingDiv a#button_moreJobs {
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+	display: block;
+	padding: 10px;
+	color: white;
+}
+.direct-action-btn a {
+	width: 100%;
+	color: white;
+	text-align: center;
+	display: block;
+	padding: 10px;
+	margin: 0 0 20px;
+	font-size: 140%;
+}
+#direct_searchCriteriaHeader {
+	float: none !important;
+}
+#direct_listingDiv .direct-action-btn a {
+	margin-top: 20px;
+	color: white;
+}
+#direct_jobDescriptionText p {
+	margin-bottom: 14px;
+}
+#direct_jobDescriptionText strong, #direct_jobDescriptionText b {
+	font-weight: bold;
+}
+#direct_jobDescriptionText ul {
+	list-style: disc;
+	margin-left: 18px;
+}
+#direct_listingDiv  strong {
+	font-weight: bold;
+}
+.skiplink.visuallyHidden:focus {
+	clip: auto;
+	height: auto;
+	width: auto;
+	background: #333;
+	padding: 6px 10px;
+	display: inline-block;
+	color: white;
+	top: 0;
+	text-decoration: none;
+	z-index: 9;
+	font-size: 120%;
+}
+.visuallyHidden { 
+	position: absolute; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height: 1px; width: 1px; 
+	margin: -1px; padding: 0; border: 0; 
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.direct-job-assets {
+	display: none;
+}

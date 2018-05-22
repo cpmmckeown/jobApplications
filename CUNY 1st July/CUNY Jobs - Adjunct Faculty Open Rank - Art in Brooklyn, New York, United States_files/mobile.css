@@ -1,0 +1,21 @@
+@media screen and (max-width: 800px) {
+	#direct_applyButtonBottom {
+		display: none;
+	}
+	#direct_disambiguationDiv h3:after {
+		content: '';
+		font: normal normal normal 14px/1 FontAwesome;
+		content: "\f068";
+		float: right;
+		line-height: 2.6;
+	}
+	#direct_companyModule, #direct_disambiguationDiv h3:after, #direct_disambiguationDiv h3.plus-icon:after {
+		display: block;
+	}
+	#direct_disambiguationDiv {
+		margin-top: 18px;
+	}
+	#direct_disambiguationDiv ul, #direct_disambiguationDiv .more_less_links_container {
+		display: none;
+	}
+}

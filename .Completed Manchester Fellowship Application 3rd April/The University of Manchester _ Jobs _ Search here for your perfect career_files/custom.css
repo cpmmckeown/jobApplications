@@ -1,0 +1,446 @@
+/*===================*/
+/* Pricol: #663399   */
+/* Hovcol: #663399   */
+/*===================*/
+
+.width100per {width:100%;}
+.width45per {width: 45%;}
+
+legend{display:none}
+.re {color:red}
+
+/*Search Page*/
+/*================================================*/
+
+div.jt-form-block h2.searchheader {line-height: 1.2em;
+margin-bottom: 5px;
+padding-bottom: 10px;
+border-bottom: 0px solid #663399;
+font-size: 16px;
+    background-color: #663399;
+    color: #ffffff;
+    padding: 5px;
+}
+div.jt-form-block .InlineDiv, div.jt-form-block .InlineDivpostcode, div.jt-form-block .divkeywords {Position:relative; padding:0.5em 0px;}
+.OptionButtonListItem, .divpostcodebox, .divpostcodemiles, .divkeywordsText, .divKeywordOptions {Display:block; min-width: 49%; float:left}
+.RegionLocationsRowLeftCol {display:none; Position:relative; padding:5px 0px}
+
+.divpostcodebox, .divpostcodemiles, .divkeywordsText, .divKeywordOptions, .divKeywordOption1  {Position:relative;}
+
+.divKeywordOption1, .divKeywordOption2 {display:block; padding:5px 0px;}
+.divKeywordOption1 div, .divKeywordOption2 div {float:left; }
+.divKeywordOption1 .divKeywordOptions1input, .divKeywordOption2 .divKeywordOptions2input {width:10%; }
+.divKeywordOption1 .divKeywordOptions1input input, .divKeywordOption2 .divKeywordOptions2input input {vertical-align:top;}
+
+.divKeywordOption1 .divKeywordOptions1label {width:88%}
+
+
+/* BUttons */
+/*================================================*/
+
+.jt-form .submitcontinue {font-size:15px; padding:5px 10px 5px 10px; bottom:-32px}
+.jt-form .goback, .jt-form .goback2, .jt-form .goback3, .jt-form .gofarwad {font-size:18px; bottom:-30px;}
+
+/* Vacancies */
+/*================================================*/
+
+.clearfloat {clear:both}
+
+.vacancies {margin-bottom:2em !important; border-bottom: 2px solid #663399 !important;}
+
+
+
+/* job Display */
+/*================================================*/
+.jt-form .emailafriend, .jt-form  .jobmsg {padding:5px; border:1px solid #663399; -moz-border-radius: 5px; -webkit-border-radius: 5px;border-radius: 5px;}
+.jt-form .emailafriend  a {color:#7f7f7f}
+
+
+
+/*Decide page*/
+/*========================================*/
+.jt-form .jt-form-block.jt-login fieldset {padding-left:10px}
+.jt-form .jt-form-block.jt-login fieldset div.TK_WIDGET {float:left; margin-right:10px;}
+.jt-form .jt-form-block .jt-field label {width:30%}
+.jt-form .jt-form-block .jt-field input, .jt-form .jt-form-block .jt-field textarea {width:55%}
+.jt-form .jt-form-block .jt-field select {width:56%}
+
+/* Login */
+/*======================================================*/
+.tderror {color:red}
+.errordiv, p.req {background-color: #f5f5f5; border: 1px solid #ccc; padding:10px; display:block; width:100%; margin-bottom:20px; }
+.errordiv div {margin-left:40px; padding:10px;}
+p.req {Padding-left: 40px; color:red}
+
+.errordiv, p.req {background-image: url(/common/images/error.jpg); background-repeat:no-repeat;}
+
+.jt-forgotten {top:-2em}
+
+
+/* Home page */
+/*  ============================================================= */
+
+.jt-form .Jobrow {border: 1px solid #ddd;  -moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;padding:5px 5px 5px 5px}
+
+.Jobrow {margin-bottom:10px;}
+.Jobrowno1 {position:relative; clear:both}
+.Jobrowno1 div.floatleft {float:left}
+.Jobrowno1 div.floatright {float:right}
+.Jobrowno1 .links, .Jobrowno1 .Withdrawn{
+padding: 7px 15px 7px 15px; margin-top:0px;
+border:1px solid #663399; -moz-border-radius: 5px; 
+-webkit-border-radius: 5px;border-radius: 5px;
+margin-right:10px
+}
+.Jobrowno1 div.floatleft {margin-bottom:5px}
+.Jobrowno1 .links:hover, .Withdrawn {background-color: #CFCFCF;}
+.Jobrowno1 .links:hover a {color:#fff}
+
+
+.completedheadercaption {font-size: 14px;
+padding: 4px 0 4px 5%;
+text-align: left;}
+
+.completedheadercaption {color: #3a3c42;
+width: auto;
+border-bottom: 7px solid #663399;
+font-size: 10px;
+padding: 4px 0 4px 0;
+text-align: center;}
+
+
+
+
+/* Application menu*/
+/*====================================================*/
+.TabbedPanels {display:block; margin:20px 0px;}
+.TabbedPanelsTabGroup {position:relative; clear:both; list-style:none;}
+.TabbedPanelsTabGroup li {float:left}
+#content UL.TabbedPanelsTabGroup {margin: 0px; padding: 0px;}
+
+.TabbedPanelsContent {padding:10px 0px}
+.TabbedPanelsContent table {width:100%}
+
+
+/*Education Listings*/
+/*===================================*/
+
+.jt-body .completedheader_dec{margin-top: 4em !important; border-bottom: 7px solid #663399;}
+
+.completedheader_dec {clear:both; padding:10px}
+.completedheader_dec div.clsHeading{float:left}
+.completedheader_dec div.clsedit{float:right}
+
+#tp2 .jt-field input, #tp2 .jt-field select, #tp2 .jt-field textarea{background:#fff}
+
+
+
+
+/*  CV upload */
+/*  ============================================================= */
+.FCKeditorDiv, .FCKeditorDiv td {border:0px}
+
+.ajax-file-upload-statusbar-top{border:1px solid #909394;margin-top:10px;margin-right:10px;
+margin:5px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;padding:5px 5px 5px 5px;
+    background-color: #EEEEE0;
+background: -moz-linear-gradient(top,  #EEEEE0,  #d7d6d2);
+background-image: linear-gradient(top,  #EEEEE0,  #d7d6d2);
+background-image: -o-linear-gradient(top,  #EEEEE0,  #d7d6d2);
+background-image: -moz-linear-gradient(top,  #EEEEE0,  #EEE);
+background-image: -webkit-linear-gradient(top,  #EEEEE0,  #EEE);
+background-image: -ms-linear-gradient(top,  #EEEEE0, #EEE);
+}
+
+div.cvviewimage {position:relative; clear:both; display:block; padding-bottom:30px}
+div.cvviewimage img, div.cvviewimage div.ViewCV {float:left}
+.cvviewimage img {width:30px; height:30px; margin-right:10px;}
+
+div.viewcv {font-size: 15px}
+div.cvviewimage a.ViewCV {font-size: 15px}
+
+.errorcvmsg {
+border:1px solid red;margin-top:10px;margin-right:10px;
+margin:5px;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;padding:5px 5px 5px 5px;
+    background-color: #F6CECE;
+background: -moz-linear-gradient(top,  #F6CECE,  #d7d6d2);
+background-image: linear-gradient(top,  #F6CECE,  #d7d6d2);
+background-image: -o-linear-gradient(top,  #F6CECE,  #d7d6d2);
+background-image: -moz-linear-gradient(top,  #F6CECE,  #EEE);
+background-image: -webkit-linear-gradient(top,  #F6CECE,  #EEE);
+background-image: -ms-linear-gradient(top,  #F6CECE, #EEE);
+}
+
+
+/*  Client Overides */
+/*  ============================================================= */
+.jt-body .jt-main h2 {color: #663399;}
+.jt-body .jt-main h1 strong {color: #663399;font-size: 21pt;font-weight: normal;}
+.jt-form {border-bottom: 2px solid #663399;}
+.jt-form .submitcontinue {background: #663399;}
+.jt-body .jt-main a {color: #663399;}
+.jt-body .jt-header .jt-icon {background-color: #663399;}
+@media (min-width: 768px) {
+	.jt-body .jt-header h3 {padding: 20px 0;}
+	ul.jt-nav.jt-nav-tabs {display:none}
+	}
+@media (max-width: 700px) {
+	.OptionButtonListItem {width: 100%;}
+	.InlineDiv {padding:0;}
+	}
+.jt-form .jt-form-block.jt-login h2 {border-bottom: 2px solid #663399;}
+.jt-body div.jt-form {border-bottom: 2px solid #663399;}
+.jt-nav-tabs > li.jt-active > a, .jt-nav-tabs > li.jt-active > a:hover, .jt-nav-tabs > li.jt-active > a:focus {background: #663399;}
+.jt-nav-tabs {border-bottom: 3px solid #663399 !important;}
+.jt-body .jt-helpbox {background: #663399;}
+.jt-body .jt-helpbox:after {color: #663399;}
+.jt-table caption {border-bottom: 7px solid #663399;}
+.jt-form a.submitcontinue, .jt-form a.submitcontinue:hover {color: #fff}
+ul.jt-nav.jt-nav-tabs {padding:0;}
+.jt-nav-tabs > li {margin-bottom: -4px !important;}
+.jt-body .jt-container .jt-affix .jt-helpbox {display:none}
+.jt-body .jt-helpbox {display:none}
+.jt-form .jt-form-block .jt-field label {color: #663399; margin-left:10px;}
+.jt-body .jt-header .jt-nav > li > a span {background: #663399;}
+.jt-body .jt-header .jt-nav > li > a i {background: #663399;}
+.jt-navbar-default .jt-navbar-nav > li > a {color: #fff;}
+
+.jt-body .jt-header:after {display:none}
+.jt-footer:after {display:none}
+.jt-form .submitcontinue:hover {background: #663399;}
+
+.jt-form .jt-form-block .jt-field input, .jt-form .jt-form-block .jt-field select, .jt-form .jt-form-block .jt-field textarea {
+    margin-left: 10px;
+}
+
+/****************PM 30/01/2018**************************************/
+.jt-form .submitcontinue {background: #663399; border-radius:0px;}
+.JT-password-hints{display:none;}
+.jt-form .jt-form-block .jt-field input, .jt-form .jt-form-block .jt-field select, .jt-form .jt-form-block .jt-field textarea{background-color:#ffffff;}
+.jt-footer p { margin-top: 5px;}
+.jt-body{margin-bottom:50px;}
+.jt-table caption strong, .jt-table caption i{color: #663399;}
+@media (min-width: 768px){.jt-table caption { padding: 0px;}}
+.jt-body .jt-header {border-bottom: 2px solid #663399;}
+h1, h2, h3, h4, h5, h6 {clear: NONE;}
+@media (min-width: 768px){.jt-body .jt-header .jt-nav > li > a span {margin-left: 0px; }}
+@media (min-width: 768px){
+.jt-body .jt-header .jt-nav > li > a:hover i, .jt-body .jt-header .jt-nav > li > a:hover span {  background:  #663399; color:  #ffffff;}}
+.jt-body .jt-header .jt-navbar-nav .jt-open .jt-dropdown-menu li a:hover {background: #663399; }
+.jt-form .jt-form-block .jt-field {    background-color: #ebebeb; padding: 10px 0px 10px 0px;}
+.jt-body .reg-email-title{margin-bottom:20px !important;}
+.jt-body .reg-email-title{border-radius:0px;}
+.modal-dialog .modal-inner {border: 3px solid #663399;}
+ .jt-button, .jt-button:hover {background: #663399; border-radius:0px; padding:10px;}
+@media (min-width: 768px){.jt-body .jt-progress-bar {margin-bottom: 50px;}}
+/*11/09/14 - Ejaz*/
+/*================================*/
+
+.emailafriendcontainer .jt-form .jt-form-block .jt-field input, 
+.emailafriendcontainer .jt-form .jt-form-block .jt-field select, 
+.emailafriendcontainer .jt-form .jt-form-block .jt-field textarea {background:#fff}
+
+#tp2 ul.jt-nav.jt-nav-tabs {display:block}
+
+.employmentrecords{width:100%!important}
+.employmentrecords th, .declration_data .employmentrecords th {width:35%}
+.employmentrecords td {width:65%}
+.employmentrecords th, .employmentrecords td, .declration_data .employmentrecords th, .declration_data .employmentrecords td {padding:3px}
+
+.sectiondetails table th {width:35%}
+.sectiondetails table td {width:65%}
+
+
+/* Client Overides */
+.jt-body .jt-progress-bar ul {margin-top: 5em;}
+
+.grid .grid__col {padding-left: 0;}
+.grid > .grid__col--12-of-12 { width: inherit;}
+
+.jt-table thead th {color: white;}
+
+.vacancy #nav .clear {background: #663399;}
+
+media="all"
+#block-views-vacancies-block_1 h3, #block-views-vacancies-block_2 h3, #block-views-related_nodes-block_4 h3, #block-views-vacancies-block_3 h3, #block-views--exp-vacancies-page_1 h3, #block-views-favourite_nodes-block_2 h3, #block-views--exp-vacancies-page_2 h3, #block-saveforlater-0 h3, #block-saveforlater-1 h3 {border-bottom: 5px solid #663399;}
+
+#left_sd div.block_inner {margin-top:10px;}
+
+
+.jt-form .jt-form-block.jt-login {background: inherit;}
+.jt-body table {max-width: 100%; width: 100%;}
+.footer {min-height: 100%;}
+.entry-content ul {list-style-type: none;}
+.sf-menu > li > a.twoline {padding-left: 5px; padding-right: 5px;}
+.jt-footer {margin-top: 0;}
+.jt-form .jt-form-block {padding: 5px;}
+.jt-body table thead {background-color: #663399;}
+.jt-body .jt-header .jt-navbar-nav .jt-open .jt-dropdown-menu li a {color: #ffffff!important;}
+.jt-body .jt-header .jt-navbar-nav .jt-open .jt-dropdown-menu {background: #663399;}
+.jt-body .jt-header .jt-navbar-nav .jt-open .jt-dropdown-menu:before {color: #663399;}
+.jt-form .sectionheader {border-bottom: 3px solid #663399;}
+.jt-form .goback2 {right: initial;}
+.jt-body #tblassessment .questionno {vertical-align: top;}
+table#tblassessment {border-spacing: 0 15px;}
+#JobDescription {margin-top:20px;}
+#JobDescription ul, #JobDescription ol, .jobdetailsitemCopy ul, .jobdetailsitemCopy ol {margin-left:50px;}
+#JobDescription p em {font-style: italic; color: inherit;}
+@media (max-width: 370px) {
+.ContinueButton .goback {position: inherit;}
+}
+.previousbutton .goback {right: inherit;}
+.jt-body .jt-main p {font-size: inherit;}
+/* One col */
+.jt-col-md-6 {width: 100%;}
+/*---*/
+
+
+/* consultancies */
+/*=======================================================*/
+
+
+#tblconsultancyjobs, #tblconsultancyjobs td {border-collapse: collapse; border:1px solid #eee}
+#tblconsultancyjobs th {background-color: #ccc; }
+#tblconsultancyjobs th, #tblconsultancyjobs td, #tblaencysearchjobs td, #tblaencysearch td, #tblyourdetails th, #tblyourdetails td, #tblyouraccess th, #tblyouraccess td {padding:3px; text-align:left}
+#tblyourdetails th, #tblyouraccess th {font-weight:normal}
+#tblyourdetails td input, #tblyouraccess td input {width:170px}
+#tblconsultancyjobs .gridBarStatus td {border:0px}
+#tblaencysearchjobs td #cmbStatus {width:170px}
+
+/* addthis */
+.jt-body .at-share-tbx-element.addthis_32x32_style .at-share-btn, .jt-body .at-share-tbx-element.addthis_32x32_white_style .at-share-btn {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;}
+.addthis_sharing_toolbox {float:right; margin-top: -15px!important;}
+.jobdisplayheader .addthis_sharing_toolbox {float:left; margin-top: 10px!important;}
+.jobdisplayheader {position: relative;}
+.jobdisplayheader_internal {float:left;}
+
+/* maps */
+.jobdisplayheader #JobMap {
+			float:right;
+			width: 100%;
+			max-width:350px;
+			height:200px;
+			-moz-border-radius: 20px;
+			-webkit-border-radius: 20px;
+			border-radius: 20px;
+			/* *margin-top: -50px; */
+			}
+
+/* tanslate */
+@media all {
+#jobtrain_translate {float:right;}
+#jobtrain_translate img {display:none;}
+#artitleTranslate, #customTranslate, .goog-te-banner-frame, #goog-gt-tt {display: none!important;}
+.goog-te-gadget-simple {border:none!important;}
+.goog-te-menu-value {background: none!important;}
+.goog-te-menu-value span {margin-right:10px!important;}
+/* .goog-text-highlight {display:none!important;} */
+.goog-text-highlight {
+    background-color: initial!important;
+    -webkit-box-shadow: initial!important;
+    -moz-box-shadow: initial!important;
+    box-shadow: initial!important;
+    box-sizing: initial!important;
+    -webkit-box-sizing: initial!important;
+    -moz-box-sizing: initial!important;
+    position: initial!important;
+    }
+}
+
+
+/* CE custom vacancies */
+/*.vacancies, .jobdisplaycontainer {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.35)!important;
+  -moz-border: 1px solid rgba(0, 0, 0, 0.35)!important;
+  -webkit-border: 1px solid rgba(0, 0, 0, 0.35)!important;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  padding: 20px!important;
+  margin-bottom: 15px!important;
+}
+.vacancies .vacanciesTitle {margin-bottom: 15px!important;}
+.vacancies .vacanciesTitle a {color: white!important; background-color: #663399; padding: 10px; border-radius:10px; display: inline-block;}
+.vacancies .vacanciesTitle a:hover {background-color: #663399;}
+
+.vacancies .jobdetailsitem.reference:before, .jobdisplaycontainer .jobdetailsitem.reference:before {content: "\f02b"; color: red; font-family: FontAwesome; display: inline-block; width: 20px;}
+.vacancies .jobdetailsitem.distance:before, .jobdisplaycontainer .jobdetailsitem.distance:before {}
+.vacancies .jobdetailsitem.location:before, .jobdisplaycontainer .jobdetailsitem.location:before {content: "\f041"; color: cornflowerblue; font-family: FontAwesome; display: inline-block; width: 20px;}
+.vacancies .jobdetailsitem.salary:before, .jobdisplaycontainer .jobdetailsitem.salary:before {content: "\f0d6"; color: green; font-family: FontAwesome; display: inline-block; width: 20px;}
+.vacancies .jobdetailsitem.employment:before, .jobdisplaycontainer .jobdetailsitem.employment:before {content: "\f007"; color: burlywood; font-family: FontAwesome; display: inline-block; width: 20px;}
+.vacancies .jobdetailsitem.department:before, .jobdisplaycontainer .jobdetailsitem.department:before {content: "\f015"; color: lightblue; font-family: FontAwesome; display: inline-block; width: 20px;}
+.vacancies .jobdetailsitem.division:before, .jobdisplaycontainer .jobdetailsitem.division:before {content: "\f015"; color: pink; font-family: FontAwesome; display: inline-block; width: 20px;}
+.vacancies .jobdetailsitem.hours:before, .jobdisplaycontainer .jobdetailsitem.hours:before {content: "\f017"; color: orange; font-family: FontAwesome; display: inline-block; width: 20px;}
+.vacancies .jobdetailsitem.startdate:before, .jobdisplaycontainer .jobdetailsitem.startdate:before {content: "\f073"; color: purple; font-family: FontAwesome; display: inline-block; width: 20px;}
+.vacancies .jobdetailsitem.closingdate:before, .jobdisplaycontainer .jobdetailsitem.closingdate:before {content: "\f073"; color: red; font-family: FontAwesome; display: inline-block; width: 20px;}
+
+.jobdetailsitem.bottomLinks {padding:0!important;}
+.jobdetailsitem.bottomLinks > div:first-child {display:none;}
+@media (max-width: 500px) {
+.addthis_sharing_toolbox {float: left; margin-top: 10px!important;}
+.jobdetailsitem.bottomLinks {padding-bottom: 30px!important;}
+.vacancies .vacanciesTitle a {display: block;}
+}*/
+
+
+/* CE logos */
+/*.vacancies .Accommodation {
+  background-image: url("https://client/clientimages/logo.png");
+  width: 180px;
+  height: 140px;
+  float: right;
+  zoom: 60%;
+}*/
+
+/* CE new register button */
+input#registeroldfashioway {
+	background: #663399;
+	color: #ffffff;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	cursor: pointer;
+	float:left;
+	margin-left:10px;
+	}
+input#registeroldfashioway:hover {background: #663399; border: 0!important;}
+
+/* CE Onboarding */
+.jt-form .Jobrow {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.35)!important;
+    -moz-border: 1px solid rgba(0, 0, 0, 0.35)!important;
+    -webkit-border: 1px solid rgba(0, 0, 0, 0.35)!important;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    padding: 20px!important;
+    margin-bottom: 15px!important;
+	}
+
+.agreedtoterms {
+    background-color: green;
+    color: white;
+    line-height: 2em;
+    text-align: center;
+}
+
+.declined {
+    background-color: red;
+    color: white;
+    line-height: 2em;
+    text-align: center;
+}
+
+/* Reference */
+.referenceDeclaration .goback, .referenceForm .goback {right: inherit;}
+.referenceForm input {width: 100%;}
+.referenceForm textarea {width: 100%; min-height: 150px;}
+.jt-form .submitcontinue {width: inherit;}

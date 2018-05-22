@@ -1,0 +1,1507 @@
+/* Force Browser Scrollbars */
+html {
+    height: 100%;
+    margin-bottom: 1px;
+}
+
+/* Global Reset of Margins and Padding */
+html * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #333;
+    font-size: 69%;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+textarea {
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+
+/**** Typography ****/
+
+/** Paragraph Styles **/
+p {
+    margin: 0 0 1em 0;
+}
+
+a:link {
+    color: #003989;
+}
+
+a:visited {
+    color: #00657C;
+}
+
+a:hover {
+    color: #399;
+    text-decoration:underline;
+}
+
+a:focus {
+    outline: 0;
+}
+
+a img {
+    border: 0;
+}
+
+.clear {
+    clear: both;
+    display: block;
+}
+
+.clear-right {
+    clear: right;
+}
+
+.clear-left {
+    clear: left;
+}
+
+.right {
+    float: right;
+    margin: 1em;
+}
+
+.left {
+    float: left;
+    margin: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/** Headings **/
+h1, h2, h3, h4, h5 {
+    color: #003989;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+h1 {
+    font-size: 1.9em;
+    line-height: 1.3;
+    margin: 0 0 .5em 0;
+}
+
+h2, h3 {
+    font-size: 1.5em;
+    margin: 1.5em 0 .5em 0;
+    color: #008FA3;
+}
+
+h3 {
+    font-size: 1.4em
+}
+
+h4 {
+    font-size: 1.3em;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+/** Lists **/
+dl {
+    margin: 0 0 1em 0;
+}
+
+dl dt {
+
+}
+
+dl dd {
+}
+
+ul, ol {
+    margin: 0 0 1em 0;
+}
+
+ul li, ol li {
+    margin: 0 0 0 1.5em;
+}
+
+/** Tables **/
+table {
+    border-collapse: collapse;
+    border-right: 1px solid #E5EFF8;
+    border-top: 1px solid #E5EFF8;
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+tr.odd td {
+    background: #F7FBFF;
+}
+
+tr.odd td.header {
+    background: #F4F9FE;
+}
+
+td.header {
+    background: #F9FCFE;
+}
+
+th {
+    background: #F4F9FE;
+    text-align: center;
+    font-size: 1.1em;
+    color: #003989;
+}
+
+th.left-side {
+    text-align: left;
+}
+
+th span.details {
+    font-weight: normal;
+}
+
+td img {
+    float: right;
+    vertical-align: middle;
+}
+
+td, th {
+    border-bottom: 1px solid #E5EFF8;
+    border-left: 1px solid #E5EFF8;
+    vertical-align: top;
+    padding: .8em 1em;
+}
+
+th {
+    text-align: center;
+}
+
+th.header, td.header {
+    text-align: left;
+}
+
+
+/** Form Elements **/
+input, textarea{
+    /* border: 1px solid #CCC; */
+    color: #444;
+    font-size: 1.1em;
+    padding: .3em;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+select {
+    border: 1px solid #CCC;
+    color: #444;
+    /* padding: .3em; */
+}
+
+input.image {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+input.bevelled {
+    background: #FFF url(/images/global/forms/bevelled-input_bg.gif) no-repeat bottom right;
+    border: 1px solid #CCDDE6;
+    border-bottom: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+    display: inline;
+}
+
+
+input.bevelled:focus {
+    outline: 0;
+    /*background-color: #fdfdea;*/
+}
+
+
+form dl dt label {
+    font-size: .9em;
+}
+
+form dl dd {
+    margin: 0 0 1em 0;
+}
+
+dl dd {
+    margin: 0 0 1em 0;
+}
+
+
+/**** Layout ****/
+
+#container {
+    font-size: 1.1em;
+    margin: 0 auto;
+    /* width: 78em; /* 78.1 but this is close enough */
+}
+
+#header-layout, #layout, #footer {
+    width: 78em;
+    margin: 0 auto;
+}
+
+#header {
+    position: relative;
+    /* visibility: hidden; */
+    background: #FFF url(/images/global/header/background.gif) repeat-x bottom left;
+    padding-top: 1em;
+}
+
+
+#layout {
+    margin-top: 1em;
+}
+
+#layout {
+    padding: 1em;
+
+    /* background: white url(/images/global/grid.gif) repeat-y 50% 0; */
+}
+
+#layout-top {
+    height: 1px;
+}
+
+#content {
+    margin: 0 19.1em 0 0;
+    padding: 1em;
+}
+
+#sidebar {
+    float: right;
+    width: 18.2em;
+    padding: 1em 0 0 0;
+}
+
+/** Popup Window Layout ***/
+body.popup #layout {
+    margin: 1em;
+}
+
+
+
+/**** Elements ***/
+
+/*** Header ***/
+
+#header-layout {
+    position: relative;
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: -.5em;
+}
+
+#strapline {
+    background: url(/images/global/great-jobs-bright-people.gif) no-repeat top left;
+    display: block;
+    height: 16px;
+    left: 109px;
+    position: absolute;
+    text-indent: -10000px;
+    top: 43px;
+    width: 183px;
+}
+
+/*** Footer ***/
+
+#footer {
+
+    background: #FFF;
+    border-top: 1px solid #EEE;
+
+    clear: both;
+
+        padding: 1.4em 1em 1em 1em;
+
+
+}
+
+#footer-logo {
+    display: block;
+    float: left;
+    margin: .4em 3em 0 .6em;
+}
+
+#footer-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footer-navigation ul li {
+    display: inline;
+    padding: 0 1em 0 0;
+    margin: 0;
+}
+
+#footer-navigation ul li a {
+    font-size: .9em;
+}
+
+#footer-navigation ul.secondary li a {
+    color: #666;
+    font-size: .8em;
+    text-decoration: none;
+}
+
+#footer-navigation ul.secondary li a:hover {
+    text-decoration: underline;
+}
+
+#legal {
+    float: right;
+    padding-top: 1px;
+}
+
+#legal ul {
+    margin: 0;
+    padding: 0;
+}
+
+#legal ul li {
+    display: inline;
+    font-size: .9em;
+    padding: 0 1em 0 0;
+    margin: 0;
+}
+
+#copyright {
+    display: block;
+    margin: 0 1em 0 0;
+    text-align: right;
+    font-size: .8em;
+    color: #666;
+    padding: .4em 0;
+}
+
+/**** Elements ****/
+
+/*** Boxed Content ***/
+.boxed {
+    margin: 0 0 0.8em 0;
+    background: #EFF5F9 url(/images/global/boxed-bg.gif) repeat-y top right;
+    border-left: 1px solid #D8E5EC;
+    position: relative;
+}
+
+.boxed h1, .boxed h2 {
+    background: #003989 url(/images/global/boxed-heading-sprites.gif) no-repeat 0 0;
+    border-bottom: 1px solid #004080;
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 0 0 -1px;
+    padding: 0 0 0 4px;
+}
+
+.boxed.no-bg h1, .boxed.no-bg h2 {
+    margin-left: 0;
+    text-align: center;
+}
+
+.boxed h1 span, .boxed h1 a, .boxed h2 span, .boxed h2 a {
+    background: url(/images/global/boxed-heading-sprites.gif) no-repeat 100% 0;
+    color: #FFF;
+    display: block;
+    padding: 0.5em 0.3em 0.4em 0.3em;
+    text-decoration: none;
+}
+
+#careers-featured-employer-buttons.boxed h2 span {
+    padding: 0.5em 0.2em 0.4em 0.1em;
+}
+
+.boxed .box-container {
+    padding: 0;
+    background: url(/images/global/boxed-top-bg.gif) no-repeat top right;
+}
+
+.boxed .box-content {
+    padding: 0.6em 1em 0.4em;
+    background: url(/images/global/boxed-bottom-bg.gif) no-repeat bottom right;
+}
+
+.boxed .box-header {
+    margin: 0 0 -6px -1px;
+    background: url(/images/global/boxed-top-bg.gif) no-repeat top left;
+    width: 6px;
+    height: 6px;
+}
+
+.boxed .box-footer {
+    margin: -6px 0 0 -1px;
+    background: url(/images/global/boxed-bottom-bg.gif) no-repeat bottom left;
+    width: 6px;
+    height: 6px;
+}
+
+.boxed.no-bg {
+    border: 0;
+    background: 0;
+}
+/*light-gradian box*/
+.purple-shade-box h2{
+    background:url("/images/global/purple-shade-box/top-left-with-line.gif") no-repeat scroll top left transparent;
+    margin:1em 0 0 0;
+
+}
+.purple-shade-box h2 span{
+    background: url("/images/global/purple-shade-box/top-right-with-line.gif") no-repeat scroll right top transparent;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 1em 0 0.5em 0.2em;
+}
+.purple-shade-box-content{
+    border-left: 1px solid #cbcbcb;
+    border-right: 1px solid #cbcbcb;
+    margin-bottom: -1em;
+    margin-top: -0.5em;
+    overflow: auto;
+    padding: 0 1em;
+}
+.purple-shade-box-plain-content{
+    border-left: 1px solid #cbcbcb;
+    border-right: 1px solid #cbcbcb;
+    margin-bottom: -1em;
+    margin-top: -0.5em;
+    overflow: auto;
+    padding: 0 1em;
+}
+.purple-shade-box-bottom-outer {
+    background:url("/images/global/purple-shade-box/bottom-left.gif") no-repeat scroll bottom left transparent;
+    margin: 0 1em 0 0;
+    padding: 0 0 0 1em;
+}
+.purple-shade-box-bottom-inner{
+    background: url("/images/global/purple-shade-box/bottom-right.gif") no-repeat scroll right bottom transparent;
+    display: block;
+    margin: 0 -1em 0 1em;
+    padding: 1em;
+}
+
+/*light-gradian box*/
+.light-shade-box h1,
+.light-shade-box h2{
+    background:url("/images/global/light-shade-box/top-left.gif") no-repeat scroll top left transparent;
+    margin:1em 0 0 0;
+    color: #003989;
+    font-size: 1.3em;
+    font-weight: bold;;
+}
+.light-shade-box h1 span,
+.light-shade-box h2 span{
+    background: url("/images/global/light-shade-box/top-right.gif") no-repeat scroll right top transparent;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 1em 0 0.5em 0.2em;
+}
+.light-shade-box h1 span.with-line,
+.light-shade-box h2 span.with-line{
+    background: url("/images/global/light-shade-box/top-right-with-line.gif") no-repeat scroll right top transparent;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 0.7em 0;
+}
+
+.light-shade-box-content{
+    border-left: 1px solid #cbcbcb;
+    border-right: 1px solid #cbcbcb;
+    margin-bottom: -1em;
+    margin-top: -0.5em;
+    overflow: auto;
+    padding: 0 1.5em;
+}
+.light-shade-box-plain-content{
+    border-left: 1px solid #cbcbcb;
+    border-right: 1px solid #cbcbcb;
+    margin-bottom: -1em;
+    margin-top: -0.5em;
+    overflow: auto;
+    padding: 0 1.5em;
+}
+.light-shade-box-bottom-outer {
+    background:url("/images/global/light-shade-box/bottom-left.gif") no-repeat scroll bottom left transparent;
+    margin: 0 1em 0 0;
+    padding: 0 0 0 1em;
+}
+.light-shade-box-bottom-inner{
+    background: url("/images/global/light-shade-box/bottom-right.gif") no-repeat scroll right bottom transparent;
+    display: block;
+    margin: 0 -1em 0 1em;
+    padding: 1em;
+}
+
+/*gradiant white box*/
+.gradian-box h2{
+    background:url("/images/global/gradiant-white-box/box-top-left.gif") no-repeat scroll top left transparent;
+    margin:1em 0 0 0;
+
+}
+.gradian-box h2 span{
+    background: url("/images/global/gradiant-white-box/box-top-right.gif") no-repeat scroll right top transparent;
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 1em;
+    padding: 1em 0 0.5em 0.2em;
+}
+.gradian-box-content-outer{
+    background: url("/images/global/gradiant-white-box/left.gif") repeat-y scroll 0 0 transparent;
+    margin: 0;
+    padding: 0;
+}
+.gradian-box-content-inner{
+    background: url("/images/global/gradiant-white-box/right.gif") repeat-y scroll 100% 0 transparent;
+    overflow: auto;
+}
+.gradiant-box-bottom-inner{
+    background: url("/images/global/gradiant-white-box/box-bottom-right.gif") no-repeat scroll right bottom transparent;
+    display: block;
+    margin: 0 -1em 0 1em;
+    padding: 1em;
+}
+.gradiant-box-bottom-outer{
+    background:url("/images/global/gradiant-white-box/box-bottom-left.gif") no-repeat scroll bottom left transparent;
+     margin: 0 1em 0 0;
+    padding: 0 0 0 1em;
+}
+
+/*Single blue box*/
+.singleBox {
+    background: url("/images/global/single-box/blue-bg.gif") repeat-x scroll center bottom transparent;
+    border: 1px solid #CCCCCC;
+    height: 1%;
+    margin-bottom: 10px;
+    overflow: auto;
+    padding: 7px 9px 6px 10px;
+}
+
+/*** Navigation Lists ***/
+ul.navigation {
+  list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.navigation li {
+    border-top: 1px solid #FCFCFD;
+    border-bottom: 1px solid #D8E5EC;
+    margin: 0;
+}
+
+ul.navigation li a {
+    display: inline-block;
+    line-height: 1.1;
+    margin: 0;
+    padding: .4em 0;
+    font-size: 1em;
+    text-decoration: none;
+    /*zoom: 1;*/ /** fixes IE double padding bug on ul a items **/
+}
+
+ul.navigation li a:hover {
+    text-decoration: underline;
+}
+
+ul.navigation li.last, ul.navigation li.last a {
+    border-bottom: 0;
+}
+
+ul.navigation li.first {
+    border-top: 0;
+}
+
+
+/*** Banners ***/
+
+.banner {
+    margin: 0 0 6px 0;
+    position: relative;
+}
+
+.banner a {
+    display: block;
+}
+
+.banner a img {
+    display: block;
+    float: none;
+}
+
+.banner img.metric {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/*** Search Result Listing ***/
+
+.results {
+    padding: 1px;
+    clear: right;
+}
+
+.result {
+    padding: .9em 6em .9em .8em;
+    border-bottom: 1px solid #DDD;
+    position: relative;
+    line-height: 1.5;
+}
+
+* html .result {
+    height: 1%;
+}
+
+    .result a {
+        font-size: 1.15em;
+        font-weight: bold;
+        line-height: 1.3;
+    }
+
+    .result .info {
+        margin-top: .2em;
+        color: #444;
+    }
+
+    .result .calendar-date {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        line-height: 1.4;
+    }
+
+    .highlight {
+    background: #d2f3f3;
+    /*border: 1px solid #4cced1;*/
+    border-bottom: 1px solid #DDD;
+    }
+
+/*** Calendar Dates ***/
+.calendar-date {
+    width: 3.6em;
+}
+
+    .calendar-date .month {
+        font-size: .8em;
+        font-weight: bold;
+        background: #003989;
+        border: 1px solid #c2dbe9;
+        display: block;
+        padding: 0;
+        text-align: center;
+        font-weight: bold;
+        color:white;
+    }
+
+    .calendar-date.today .month {
+        background: #c94747;
+        border-color: #b01c1c;
+        color: #FFF;
+    }
+
+    .calendar-date .day {
+        padding: .1em 0;
+        display: block;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: bold;
+        border: 1px solid #CCC;
+        border-top: none;
+        background: #fff;
+    }
+    .calendar-date .date-status{
+        padding: .1em 0;
+        display: block;
+        text-align: center;
+        font-size: 0.7em;
+        font-weight: bold;
+        border: 1px solid #CCC;
+        background: #fff;
+    }
+
+/*** Sharing Icons ***/
+
+.sharing li a {
+    display: block;
+    height: 16px;
+    width: 16px;
+    text-indent: -10000px;
+}
+
+.sharing .linked-in {
+    background: url(/images/global/sharing_icons.gif) no-repeat -4px -4px;
+}
+
+.sharing a.linked-in:hover {
+    background-position: -4px -28px;
+}
+
+.sharing .facebook {
+    background: url(/images/global/sharing_icons.gif) no-repeat -28px -4px;
+}
+
+.sharing a.facebook:hover {
+    background-position: -28px -28px;
+}
+
+.sharing .delicious {
+    background: url(/images/global/sharing_icons.gif) no-repeat -56px -4px;
+}
+
+.sharing a.delicious:hover {
+    background-position: -56px -28px;
+}
+
+.sharing .email {
+    background: url(/images/global/sharing_icons.gif) no-repeat -80px -4px;
+}
+
+.sharing a.email:hover {
+    background-position: -80px -28px;
+}
+
+
+/*** Options Bar ***/
+.options-bar {
+    background: #EEE;
+    color: #666;
+    margin: 1em 0;
+    background: url(/images/global/action-bar_background.gif) no-repeat 100% -16px;
+}
+
+.options-bar div.clear {
+    clear: none;
+    background: url(/images/global/action-bar_background.gif) no-repeat 100% 0;
+    height: 6px;
+}
+
+.options-bar div.clear div {
+    background: url(/images/global/action-bar_background.gif) no-repeat 0 0;
+    width: 6px;
+    height: 6px;
+    z-index: 10000;
+}
+
+.options-bar ul {
+    background: url(/images/global/action-bar_background_tl.gif) no-repeat 0 0;
+    list-style: none;
+    margin: 0 0 0 0;
+    padding: 1px;
+    overflow: hidden;
+}
+
+.options-bar ul li {
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.options-bar ul li span {
+    border: 0;
+    padding: 6px 6px 0 6px;
+}
+
+.options-bar ul li a {
+    text-decoration: none;
+    color: #666;
+}
+
+.options-bar ul li a:hover {
+    text-decoration: underline;
+}
+
+.options-bar ul li span.label {
+    float: left;
+}
+
+.options-bar ul li.first {
+    float: none;
+    padding: 0;
+}
+
+.options-bar ul li.first span {
+    padding: 6px 6px 0 12px;
+}
+
+.options-bar ul li.first ul {
+    display: inline;
+}
+
+.options-bar ul li ul {
+    display: inline;
+}
+
+.options-bar ul li.first a {
+    display: block;
+}
+
+.options-bar ul li ul {
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+
+.options-bar ul li ul li {
+    float: left;
+    background: none;
+    margin: 0;
+    padding: 6px 6px 0 6px;
+}
+
+.print {
+    background: url(/images/global/icons/print.gif) no-repeat 0 50%;
+    padding: 0 0 0 25px;
+}
+
+#letters ul li ul li {
+    padding: 6px 4px 0;
+}
+.sharing-options{
+}
+#sharing .social-fb{
+
+}
+#sharing .social-tr{
+
+}
+#sharing .social-ln{
+
+}
+#sharing .social-gp{
+
+}
+
+/*** Site map ***/
+
+#layout.sitemap #content {
+    margin-right: 0;
+}
+
+#layout.sitemap .column {
+    float: left;
+    width: 31%;
+    margin-right: 3%;
+}
+
+#layout.sitemap .column.last {
+    border-right: 0;
+    margin-right: 0;
+}
+
+#search-help ul {
+
+}
+
+/** Podcasts **/
+
+.podcast_icon {
+        margin-right: 0.6em;
+}
+
+
+/** Pagination styling **/
+
+.pagination-control {
+    text-align: center;
+    margin: 0.6em 0;
+    padding: 0.5em;
+}
+
+.pagination-control ul {
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+    line-height: 2.1em;
+}
+
+.pagination-control ul li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 0 4px;
+    padding: 0;
+}
+
+.pagination-control a, .pagination-control .disabled, .pagination-control .current {
+    margin: 0 1px 4px;
+    padding: 2px 6px;
+}
+
+.pagination-control a {
+    background: #fff;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+
+.pagination-control a:hover {
+    background: #EFF5F9;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+
+.pagination-control .skip {
+    margin: 0 .4em;
+    border: none;
+}
+
+.pagination-control a:hover.skip {
+
+    border: none;
+    background: none;
+}
+
+.pagination-control .disabled {
+    color: #999;
+    border: 1px solid #ccc;
+
+    border: none;
+}
+
+.pagination-control a:hover.disabled {
+    color: #999;
+    border: 1px solid #ccc;
+    border: none;
+}
+
+.pagination-control .current {
+    background: #003989;
+    color: #fff;
+    border: 1px solid #003989;
+    /*font-weight: bold;*/
+}
+
+/** utility classes **/
+.backtop {
+    background: transparent url(/images/global/icons/back-to-top.gif) no-repeat center right;
+    padding-right: 11px;
+}
+
+/*** Jobseeker Tools ***/
+
+.email-icon {
+    background: url(/images/global/icons/jobseeker/20x20_email.png) no-repeat 0 50%;
+    padding-left: 22px !important;
+}
+
+.feed-icon {
+    background: url(/images/global/icons/jobseeker/20x20_rss.png) no-repeat 0 50%;
+    padding-left: 22px !important;
+}
+
+.careers-icon {
+    background: url(/images/global/icons/jobseeker/20x20_person.png) no-repeat 0 50%;
+    padding-left: 22px !important;
+}
+
+.cv-icon {
+    background: url(/images/global/icons/jobseeker/20x20_doc.png) no-repeat 0 50%;
+    padding-left: 22px !important;
+}
+
+.mobile-icon {
+    background: url(/images/global/icons/jobseeker/20x20_mobile.png) no-repeat 0 50%;
+    padding-left: 22px !important;
+}
+
+.borderless-top {
+    border-top: none !important;
+}
+
+.borderless-bottom {
+    border-bottom: none !important;
+}
+
+#recaptcha_area {
+    width: 300px;
+}
+
+/*** Partner Logos ***/
+
+.logo-left {
+    margin: 5px 5px 5px 0px;
+    float: left;
+}
+
+.logo-right {
+    margin: 5px 0px 5px 5px;
+    float: right;
+}
+
+.no-float {
+    float: none;
+}
+
+/*Premier banner*/
+#premier-banner {
+    margin-top: 3em;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#logo {
+    left: -0.5em;
+    position: absolute;
+    top: 0;
+}
+#premier-banner img {
+    height: 55px;
+    width: 395px;
+}
+/*Error and success messages*/
+.error-message {
+    border: 1px solid red;
+    color: red;
+    float: left;
+    margin-bottom: 20px;
+    overflow: auto;
+    padding: 1em;
+
+}
+input.field-error, select.field-error{
+    border:1px solid red;
+}
+/*Navigation menu*/
+
+/*** Mini Navigation ***/
+
+#mini-navigation {
+    margin-top:-1px;
+    position: absolute;
+    right: 0em;
+    top: 0em;
+}
+
+#mini-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#mini-navigation ul li {
+    border-right: 1px solid #D8E5EC;
+    float: left;
+    margin: 0;
+    padding: 0 1.5em 0 1.5em;
+}
+
+#mini-navigation ul li a {
+    display: block;
+    /* padding-right: 22px; */
+    text-decoration: none;
+    font-size: .9em;
+}
+
+#mini-navigation ul li a:hover {
+    text-decoration: underline;
+}
+
+#mini-navigation ul li.last {
+    border-right: none;
+}
+
+ul li#nav-recruiters-tab,ul li#nav-jobseekers-tab {
+    background: transparent url(/images/global/header/recruiters_tab_left.gif) no-repeat bottom left;
+    border-right: none;
+    margin: -12px 0 0 0;
+    padding: 0 0 0 7px;
+}
+
+ul li#nav-recruiters-tab a,ul li#nav-jobseekers-tab a  {
+    background: transparent url(/images/global/header/recruiters_tab_right.gif) no-repeat bottom right;
+    display: block;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 14px 14px 7px 7px;
+    text-decoration: none;
+}
+
+/*** Navigation ***/
+
+#navigation {
+    /* original */
+    /*clear: both;
+    float: right;
+    margin: 3em 0 0;*/
+    /* to accomodate Premier Button */
+    clear: both;
+    float: left;
+    margin-top: 6em;
+}
+
+#navigation span {
+    line-height: 1.1;
+}
+
+#navigation a {
+    line-height: 1;
+}
+#navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#navigation ul li {
+    background: url(/images/global/header/navigation_tab_left.gif) no-repeat top left;
+    float: left;
+    margin: 0 0 0 2px;
+    padding: 0 0 0 7px;
+    position: relative;
+}
+
+#navigation ul li a{
+    background: url(/images/global/header/navigation_tab_right.gif) no-repeat top right;
+    display: block;
+    font-size: .9em;
+    font-weight: bold;
+    padding: 9px 14px 7px 7px;
+    text-decoration: none;
+}
+
+#navigation ul li a:visited {
+    color: #003989;
+}
+
+#navigation ul li a:hover{
+    color: #003989;
+    text-decoration:underline;
+}
+
+#navigation ul li.active {
+    background-position: 0 -300px;
+    border-bottom: 1px solid #FFF;
+}
+
+#navigation ul li.active a {
+    background-position: 100% -300px;
+}
+
+#navigation ul.inactive li {
+    margin-bottom: 1px;
+}
+
+#sub-navigation{
+    margin: 0 auto;
+    width: 78em;
+}
+
+/*** ESSENTIAL STYLES ***/
+.sub-menu, .sub-menu * {
+    margin:         0;
+    padding:        0;
+    list-style:     none;
+}
+/*.sub-menu {
+    line-height:    1.0;
+}*/
+.sub-menu ul {
+    position:       absolute;
+}
+.sub-menu ul li {
+    width:          100%;
+}
+.sub-menu li:hover {
+    visibility:     inherit; /* fixes IE7 'sticky bug' */
+}
+.sub-menu li {
+    float:          left;
+    position:       relative;
+}
+.sub-menu a {
+    display:        block;
+    position:       relative;
+}
+.sub-menu li:hover ul,
+.sub-menu li.sfHover ul {
+    left:           0;
+    top:            3.1em; /* match top ul list item height */
+    z-index:        99;
+}
+ul.sub-menu li:hover li ul,
+ul.sub-menu li.sfHover li ul {
+    top:            -999em;
+}
+ul.sub-menu li li:hover ul,
+ul.sub-menu li li.sfHover ul {
+    left:           10em; /* match ul width */
+    top:            0;
+}
+ul.sub-menu li li:hover li ul,
+ul.sub-menu li li.sfHover li ul {
+    top:            -999em;
+}
+ul.sub-menu li li li:hover ul,
+ul.sub-menu li li li.sfHover ul {
+    left:           10em; /* match ul width */
+    top:            0;
+}
+.sub-menu a {
+    padding: 0.75em;
+    text-decoration:none;
+}
+
+/*** arrows **/
+.sub-menu a.sub-with-ul {
+    padding-right:  2.25em;
+
+    min-width:      1px; /* trigger IE7 hasLayout so spans position accurately */
+}
+.sfHover a.sub-with-ul,.current a{
+    height:5em;
+}
+.sub-sub-indicator {
+    position:       absolute;
+    display:        block;
+    right:          .75em;
+    top:            1.05em; /* IE6 only */
+    width:          10px;
+    height:         10px;
+    text-indent:    -999em;
+    overflow:       hidden;
+    background:     url('/images/global/navigation/sub-menu/arrows-blue.png') no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */
+}
+a > .sub-sub-indicator {  /* give all except IE6 the correct values */
+    top:            .8em;
+    background-position: 0 -100px; /* use translucent arrow for modern browsers*/
+}
+/* apply hovers to modern browsers */
+a:focus > .sub-sub-indicator,
+a:hover > .sub-sub-indicator,
+a:active > .sub-sub-indicator,
+li:hover > a > .sub-sub-indicator,
+li.sfHover > a > .sub-sub-indicator {
+    background-position: -10px -100px; /* arrow hovers for modern browsers*/
+}
+/* point right for anchors in subs */
+.sub-menu ul .sub-sub-indicator { background-position:  -10px 0; }
+.sub-menu ul a > .sub-sub-indicator { background-position:  0 0; }
+/* apply hovers to modern browsers */
+.sub-menu ul a:focus > .sub-sub-indicator,
+.sub-menu ul a:hover > .sub-sub-indicator,
+.sub-menu ul a:active > .sub-sub-indicator,
+.sub-menu ul li:hover > a > .sub-sub-indicator,
+.sub-menu ul li.sfHover > a > .sub-sub-indicator {
+    background-position: -10px 0; /* arrow hovers for modern browsers*/
+}
+
+/*** shadows for all but IE6 ***/
+.sub-shadow ul {
+    background-color: url('/images/shadow.png') no-repeat bottom right;
+    padding: 0 8px 9px 0;
+    -moz-border-radius-bottomleft: 17px;
+    -moz-border-radius-topright: 17px;
+    -webkit-border-top-right-radius: 17px;
+    -webkit-border-bottom-left-radius: 17px;
+}
+.sub-shadow ul.sub-shadow-off {
+    background: transparent;
+}
+
+/*** adding the class sub-navbar in addition to sub-menu creates an all-horizontal nav-bar menu ***/
+.sub-navbar {
+    position:       relative;
+}
+.sub-navbar li {
+
+    position:       static;
+}
+.sub-navbar a {
+    border-top:     none;
+    font-size: 1em;
+    font-weight: bold;
+}
+.sub-navbar li ul {
+    padding-bottom:1em;
+    position: absolute;
+    width:  78em; /*IE6 soils itself without this*/
+}
+.sub-navbar li li {
+     position:       relative;
+}
+.sub-navbar li li ul {
+    width:          13em;
+}
+.sub-navbar li li li {
+    width:          100%;
+}
+.sub-navbar ul li {
+    width:          auto;
+    float:          left;
+}
+.sub-navbar a, .sub-navbar a:visited {
+    border:         none;
+}
+.sub-navbar a:hover{
+    text-decoration:underline;
+}
+.sub-navbar li.current {
+
+}
+ul.sub-navbar .current ul,
+ul.sub-navbar ul li:hover ul,
+ul.sub-navbar ul li.sfHover ul {
+    left:           0;
+    top:            3.5em; /* match top ul list item height */
+
+}
+ul.sub-navbar .current ul ul {
+        color: #434;
+}
+
+.sub-navbar li li.current > a {
+    font-weight:    bold;
+}
+
+/*** point all arrows down ***/
+/* point right for anchors in subs */
+.sub-navbar ul .sub-sub-indicator { background-position: -10px -100px; }
+.sub-navbar ul a > .sub-sub-indicator { background-position: 0 -100px; }
+/* apply hovers to modern browsers */
+.sub-navbar ul a:focus > .sub-sub-indicator,
+.sub-navbar ul a:hover > .sub-sub-indicator,
+.sub-navbar ul a:active > .sub-sub-indicator,
+.sub-navbar ul li:hover > a > .sub-sub-indicator,
+.sub-navbar ul li.sfHover > a > .sub-sub-indicator {
+    background-position: -10px -100px; /* arrow hovers for modern browsers*/
+}
+
+/*** remove shadow on first submenu ***/
+.sub-navbar > li > ul {
+    background: transparent;
+    padding: 0;
+    -moz-border-radius-bottomleft: 0;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+}
+
+#sub-navigation ul {
+    background: url("/images/global/navigation/sub-menu/nav-bg-grey.gif") repeat-x scroll 0 0 transparent;
+
+    overflow: hidden;
+}
+
+.sub-menu-active{
+    background: url("/images/global/navigation/sub-menu/tab-left-blue-white.gif") repeat-x scroll left top;
+    color: #333333;
+    outline: medium none;
+    text-decoration: none;
+}
+
+.sub-nav-menu-active{
+    background: url("/images/global/navigation/sub-menu/tab-left-blue.gif") repeat-x scroll left top;
+    color: #333333;
+    outline: medium none;
+    text-decoration: none;
+}
+ul.sfHover{
+    backgound: #red;
+}
+#sub-navigation li ul
+{
+    background: #F2F0F0;
+}
+
+
+/*Your account edit settings*/
+#edit-account-content{
+    overflow:hidden;
+
+}
+.zend-form{
+        width:100%;
+}
+
+/* SWD-12 - url fix */
+#social-networking a {
+    text-decoration: none;
+}
+
+/* CMS-97 - fix for fb share button */
+.fb-share-button {
+    vertical-align: bottom !important;
+    height: 26px !important;
+    overflow: hidden;
+}
+
+/* CMS-97 - fix for g+1 tall button */
+#___plusone_0[style] {
+    vertical-align: bottom !important;
+    height: 26px !important;
+}
+
+/* SWD-103 */
+.sign-up-now {
+    background: none;
+    border-bottom: 1px solid #D8E5EC;
+}
+.sign-up-now-border {
+    border-right: 1px solid #D8E5EC;
+}
+.sign-up-now p {
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 0;
+}
+.eigthy-percent {
+    width: 80%;
+}
+.view-all-jobs {
+    position: absolute;
+    top: 35px;
+    right: 15px;
+}
+.top-find-jobs {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+.bottom-find-jobs {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+
+/* BLG-16 */
+.connect-with-us-header {
+    font-size: 17px;
+    color: #008FA3;
+}
+
+#jobsbyemail {
+    background-color:#F0F0F0;
+}
+
+.textimage {
+    list-style-image: url("../images/recruiters/tick.png");
+}
+
+/* for Newzealand Pagination*/
+.pagination-control-nz a {
+    cursor: pointer;
+}

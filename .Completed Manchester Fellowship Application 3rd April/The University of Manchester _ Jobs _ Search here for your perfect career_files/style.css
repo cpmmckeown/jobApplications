@@ -1,0 +1,401 @@
+/* =============================================================================
+   HTML5 element display
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio[controls], canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+html { font-size: 100%; overflow-y: scroll; -webkit-overflow-scrolling: touch; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body { margin: 0; font-size: 12px; line-height: 1.231; }
+
+body, button, input, select, textarea, td, th, label { font-family: sans-serif; color: #747475; }
+
+::-moz-selection { background: #3297fd; color: #fff; text-shadow: none; }
+::selection { background: #3297fd; color: #fff; text-shadow: none; }
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #6d009d; text-decoration: none; }
+a:visited { color: #6d009d; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { text-decoration: underline; outline: 0; }
+
+.readMore { background: url(../clientimages/apply-button.png) 0 0 no-repeat; display: block; margin-top: 3px; height: 30px; width: 110px; clear: both; }
+.readMore a, .readMore a:active, .readMore a:visited { background: url(../clientimages/button-arrow.gif) right center no-repeat; color: #fff; padding: 0 15px 0 15px; line-height: 30px; font-size: 14px; font-family: "TheSansSemiBoldPlain"; font-weight: normal; }
+a:hover.readMore { text-decoration: underline; }
+
+a.readMoreNoBg, a:active.readMoreNoBg, a:visited.readMoreNoBg { background: url(../clientimages/purple-arrow.gif) right center no-repeat; color: #6d009d; font-weight: bold; text-align: left; padding-right: 15px; margin-top: 3px; clear: both; }
+a:hover.readMoreNoBg { text-decoration: underline; }
+
+.panel-content a { color: #FFF; }
+
+footer a { color: #666; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+footer a:visited { color: #666; }
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+.hrLine { clear: both; border-top: 2px dotted #959597; display: block; width: 100%; height: 1px; padding: 0; margin: 20px 0; }
+.hrSpacer { clear: both; display: block; width: 100%; height: 0px; margin: 0; padding: 20px 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+p { padding: 0 0 10px 0; margin: 0; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0 0 10px 0; display: block; clear: both; font-family: "TheSansSemiBoldPlain"; font-weight: normal; }
+
+h1 { font-size: 30px; color: #6d009d; }
+h2 { font-size: 20px; color: #6d009d;}
+h3 { font-size: 14px; color: #6d009d; }
+h4 { font-size: 13px; color: #6d009d; }
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px;  }
+ul li, ol li { padding: 2px 0; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; margin: 0; padding: 0; }
+
+ul.threeColumnList{ float: left;}
+ul.threeColumnList li { float: left; width: 170px;}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+img { border: 0; -ms-interpolation-mode: bicubic; }
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+legend { border: 0; *margin-left: -7px; padding: 0; }
+
+label { cursor: pointer; }
+
+button, input, select, textarea { font-size: 100%; margin: 0px 5px 0px 0px; vertical-align: baseline; *vertical-align: middle; }
+
+button, input { line-height: normal; *overflow: visible; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+textarea { overflow: auto; vertical-align: top; }
+
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* =============================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face {
+    font-family: 'TheSansSemiBoldPlain';
+    src: url('fonts/semiboldplain/thesansembolpla-webfont.eot');
+    src: url('fonts/semiboldplain/thesansembolpla-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/semiboldplain/thesansembolpla-webfont.woff') format('woff'),
+         url('fonts/semiboldplain/thesansembolpla-webfont.ttf') format('truetype'),
+         url('fonts/semiboldplain/thesansembolpla-webfont.svg#TheSansSemiBoldPlain') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TheSansSemiLightPlain';
+    src: url('fonts/semilightplain/thesansemligpla-webfont.eot');
+    src: url('fonts/semilightplain/thesansemligpla-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/semilightplain/thesansemligpla-webfont.woff') format('woff'),
+         url('fonts/semilightplain/thesansemligpla-webfont.ttf') format('truetype'),
+         url('fonts/semilightplain/thesansemligpla-webfont.svg#TheSansSemiLightPlain') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TheSansExtraBoldCaps';
+    src: url('fonts/extraboldcaps/thesanextbolcap-webfont.eot');
+    src: url('fonts/extraboldcaps/thesanextbolcap-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/extraboldcaps/thesanextbolcap-webfont.woff') format('woff'),
+         url('fonts/extraboldcaps/thesanextbolcap-webfont.ttf') format('truetype'),
+         url('fonts/extraboldcaps/thesanextbolcap-webfont.svg#TheSansExtraBoldCaps') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* =============================================================================
+   Primary styles
+   ========================================================================== */
+   
+.one-third, .one-fourth, .footerContentBox {
+	display:inline;
+	float: left;
+	position: relative;
+	overflow: visible;
+	margin-right: 10px;
+}
+
+.gridWrap {	display: block; padding: 0 20px; height: 100%; }
+
+.one-third { width: 290px; margin-right: 10px; }
+.one-fourth { width: 215px; margin-right: 10px; }
+
+div.last { margin-right: 0; clear: right; }
+
+#main { margin: 0 0 10px; } 
+#container { width: 890px; margin: 0 auto; padding: 0 10px 0 44px; }
+.contentWithSidebar { padding: 20px 0 0 20px; width: 570px; margin: 0 10px 20px 0; display:inline; float: left; }
+.contentFullWidth { padding: 20px 20px 0 20px; display: block; width: 850px; margin: 0 0 20px 0; }
+.contentFullWidth.toContentEdge { padding: 20px 0 0 0; width: 890px; }
+aside { width: 290px; margin-bottom: 20px; padding-top: 20px; display:inline; float: left; }
+aside .one-third { margin: 0 0 10px 0; }
+
+header { margin-bottom: 10px; }
+header .logo { padding: 20px 10px 20px 10px; display: block; }
+header .logo a { float: left; }
+header .logo h1{ display: inline-block; vertical-align: top; line-height: 50px; padding-left: 10px; float: right; margin: 0; padding: 0; clear: none; }
+
+.navAboutUs { width: 143px; }
+.navOpportunity { width: 222px; }
+.navOurPeople { width: 170px; }
+.navWorking { width: 212px; }
+.navApply { width: 143px; }
+
+#nav { list-style:none; font-weight:bold; display: block; position:relative; z-index:5; background: url(../clientimages/nav-bg.png) 0 0 no-repeat; padding: 0; margin: 0; }
+#nav li { float:left;	margin-right:0;	position:relative; padding: 8px 0; }
+#nav a { display:block; padding: 5px 10px; color:#6d009d; text-decoration:none; text-align: center; font-weight: bold; font-size: 14px; border-right: 1px solid #666; }
+#nav a:hover { color:#fff; }
+
+/*--- DROPDOWN ---*/
+#nav ul {	background:rgba(255,255,255,0); list-style:none; position:absolute; left:-9999px; padding: 10px 0 0 0; margin: 0; }
+#nav ul li { padding:8px 0; float:none; }
+#nav ul a{ white-space:nowrap; }
+#nav li:hover ul{ left:0; }
+#nav li:hover a { color: #fff; text-decoration: none; }
+/*#nav li:hover { background: url(../clientimages/nav-bg-hover.png) 0 0 no-repeat; }*/
+#nav li:hover ul li { background: rgba(255,255,255,0); background: red; border-top: 1px solid #aaa; padding: 0; }
+#nav li:hover ul a{ text-decoration:none; background:#fff; color: #6d009d; font-size: 12px; text-align: left; padding: 8px 5px; border: none; }
+#nav li:hover ul li a:hover{ background:#d9d9d9; }
+#nav li.last a { border:0; }
+
+#nav li.navAboutUs ul { width: 143px; }
+#nav li.navOpportunity ul { width: 222px; }
+#nav li.navOurPeople ul { width: 170px; }
+#nav li.navWorking ul { width: 212px; }
+#nav li.navApply ul { width: 143px; }
+
+#nav li.selected a { color: #fff; }
+#nav li:hover.navAboutUs, #nav li.navAboutUs.selected { background: url(../clientimages/nav-bg-hover.png) 0 0 no-repeat; }
+#nav li:hover.navOpportunity, #nav li.navOpportunity.selected { background: url(../clientimages/nav-bg-hover.png) 0 0 no-repeat; background-position: -133px 0;}
+#nav li:hover.navOurPeople, #nav li.navOurPeople.selected { background: url(../clientimages/nav-bg-hover.png) 0 0 no-repeat; background-position: -355px 0;}
+#nav li:hover.navWorking, #nav li.navWorking.selected { background: url(../clientimages/nav-bg-hover.png) 0 0 no-repeat; background-position: -577px 0;}
+#nav li:hover.navApply, #nav li.navApply.selected { background: url(../clientimages/nav-bg-hover.png) 0 0 no-repeat; background-position: -747px 0;}
+
+
+.slideshowWrap { display: block; height: 290px; background: #6d009d; margin: 0 0 20px 0; position: relative; overflow: hidden; }
+.slideshowNav { display: block; }
+.slideshowNav a { text-decoration: none; margin: 0 0 0 5px; padding: 0 5px 0 5px; background: url(../clientimages/slideshow-bullet.png) 0 -15px no-repeat; width: 10px; height: 10px; }
+.slideshowNav a.activeSlide { background-position: 0 0px; }
+.slideshowNav a:focus { outline: none; }
+
+.largeBannerType1 { border: 1px solid #CCC; display: block; padding: 10px; height: 278px; }
+.largeBannerType1 .bannerTitle { font-size: 30px; color: #6d009d; font-family: "TheSansSemiBoldPlain"; }
+
+.largeBannerType2 { background: url(../clientimages/picture-text-box/leaf.jpg) 0 0 no-repeat; padding: 0 10px; color: #FFF; position: relative; width: 270px; height: 300px; }
+.largeBannerType2 .pictureTextBlock { background: #6d009d; width: 250px; padding: 10px; position: absolute; top: 10px; }
+.largeBannerType2 .pictureTextBlock .bannerTitle { color: #FFF; padding-bottom: 10px; font-family: "TheSansSemiBoldPlain"; font-size: 20px; }
+.largeBannerType2 .pictureTextBlock p { margin: 0; padding: 0; }
+
+.largeBannerType3 { border: 1px solid #CCC; display: block; padding: 10px; height: 278px; position: relative; }
+.largeBannerType3 blockquote  { height: 280px; display: table-cell; vertical-align: middle; color: #000; font-size: 20px; text-align: center; margin: 0; padding: 0; line-height: 25px; font-family: "TheSansSemiLightPlain"; }
+.largeBannerType3 blockquote span { background: url(../clientimages/blockquote-left.png) top left no-repeat; height: 40px; display: block; padding: 0 0 5px 0; }
+.largeBannerType3 blockquote footer { background: url(../clientimages/blockquote-right.png) bottom right no-repeat; height: 40px; font-size: 12px; color: #747475; }
+
+.smallBannerType1 { border: 1px solid #CCC; display: block; padding: 10px 20px; height: 123px; }
+.smallBannerType1 .bannerTitle { color: #6d009d; padding-bottom: 10px; font-family: "TheSansSemiBoldPlain"; font-size: 20px; }
+
+.smallBannerType2 { height: 145px; }
+.smallBannerType2ImageBg { height: 50%; width: 100%; background: url(../clientimages/picture-text-box/leaf.jpg) 0 0 no-repeat; }
+.smallBannerType2ImageBg .bannerTitle { float: right; padding: 0 15px 0 0; margin: 10px 10px 0 0; background: url(../clientimages/banner-line-arrow.gif) right top no-repeat; color: #FFF; text-align: right; line-height: 18px; font-family: "TheSansExtraBoldCaps"; font-size: 25px; }
+.smallBannerType2Content { height: 50%; width: 100%; background: #6d009d; }
+.smallBannerType2Content p { width: 250px; padding: 10px 20px; color: #FFF; }
+
+.smallBannerType3 { height: 145px; }
+.smallBannerType3ImageBg { height: 100%; width: 100%; background: url(../clientimages/picture-text-box/leaf.jpg) 0 0 no-repeat; }
+.smallBannerType3ImageBg .bannerTitle { float: right; padding: 0 15px 0 0; margin: 10px 10px 0 0; background: url(../clientimages/banner-line-arrow.gif) right top no-repeat; color: #FFF; text-align: right; line-height: 18px; font-family: "TheSansExtraBoldCaps"; font-size: 25px; }
+
+
+.sectionImage { height: 215px; position: relative; margin-bottom: 10px; }
+.sectionImage h2 { position: absolute; right: 10px; bottom: 10px; padding: 0; margin: 0; font-size: 30px; color: #FFF; text-align: right; font-family: "TheSansExtraBoldCaps";}
+.researchImage1 { background: url(../clientimages/picture-text-box/leaf.jpg) 0 0 no-repeat; }
+.researchImage2 { background: url(../clientimages/picture-text-box/leaf.jpg) 0 0 no-repeat; }
+.researchImage3 { background: url(../clientimages/picture-text-box/leaf.jpg) 0 0 no-repeat; }
+.researchImage4 { background: url(../clientimages/picture-text-box/leaf.jpg) 0 0 no-repeat; }
+
+
+footer { background: #FFF url(../clientimages/footer-bg.gif) 0 0 repeat-x; color: #666; font-size: 11px; }
+footer h3 { color: #666; }
+footer ul { padding: 0; list-style-type: none; }
+
+.footerContentWrap { padding: 10px 10px 10px 20px; }
+.footerContentWrap .last { margin-right: 0; clear: right; border: none; }
+
+.footerContentBox { border-right: 1px solid #CCC; margin: 0 10px 0 0; padding: 0 10px 0 0; height: 130px; }
+
+.footerBox1 { width: 90px; }
+.footerBox2 { width: 150px; }
+.footerBox3 { width: 110px; }
+.footerBox4 { width: 145px; }
+.footerBox5 { width: 115px; }
+
+.footerShareBox { width: 130px; float: right; background: #5a5a5c; padding: 2px 10px 0 10px; margin-bottom: 20px; color: #fff }
+.footerShareBox h3 { color: #fff; }
+.footerShareBox ul { margin: 0 auto; width: 73px; }
+.footerShareBox ul li { padding: 0 3px; width: 30px; height: 60px; float: left; text-indent: -9999px; background: url(../clientimages/shareButtons.png) 0 0 no-repeat; }
+.footerShareBox ul li a { display: block; height: 67px; }
+.footerShareBox ul li.twitterIcon { background-position: 0 0; }
+.footerShareBox ul li.rssIcon { background-position: -35px 0; }
+
+.bottomLinks { background: #fff; display: block; width: 100%; clear: both; margin: 10px 0; }
+.bottomLinks ul { margin: 0 auto; width: 820px; }
+.bottomLinks ul li { float: left; padding: 0 10px; border-right: 1px solid #CCC; }
+
+
+
+
+/* =============================================================================
+   Non-semantic helper classes
+   ========================================================================== */
+
+/* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */ 
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+/* =============================================================================
+	jQuery Coda-Slider v2.0 - http://www.ndoherty.biz/coda-slider
+	Copyright (c) 2009 Niall Doherty
+	This plugin available for use in all personal or commercial projects under both MIT and GPL licenses.
+   ========================================================================== */
+
+/* Insignificant stuff, for demo purposes */
+
+	/*body { padding: 20px }*/
+	.panel h2.title { margin-bottom: 10px }
+	noscript div { background: #ccc; border: 1px solid #900; margin: 20px 0; padding: 15px }
+
+/* Most common stuff you'll need to change */
+
+	.coda-slider-wrapper { padding: 0 }
+	/*.coda-slider { background: #ebebeb }*/ /*Mark removed this*/
+	
+	/* Use this to keep the slider content contained in a box even when JavaScript is disabled */
+	.coda-slider-no-js .coda-slider { height: 200px; overflow: auto !important; padding-right: 20px }
+	
+	/* Change the width of the entire slider (without dynamic arrows) */
+	.coda-slider, .coda-slider .panel { width: 890px } 
+	
+	/* Change margin and width of the slider (with dynamic arrows) */
+	.coda-slider-wrapper.arrows .coda-slider, .coda-slider-wrapper.arrows .coda-slider .panel { width: 890px }
+	.coda-slider-wrapper.arrows .coda-slider { margin: 0 10px }
+	
+	/* Arrow styling */
+	.coda-nav-left a, .coda-nav-right a { background: #000; color: #fff; padding: 5px; width: 100px }
+	
+	/* Tab nav */
+	.coda-nav ul li a.current { background: url(../clientimages/slideshow/slideshow-bullets.png) -20px 0 no-repeat;}
+	
+	/* Panel padding */
+	.coda-slider .panel-wrapper { padding: 20px }
+	
+	/* Preloader */
+	.coda-slider p.loading { padding: 20px; text-align: center }
+	
+	/* Mark Stuff*/
+	.panel-wrapper { position: relative; display: block; height: 250px;}
+	/*.coda-slider-wrapper { height: 290px }*/
+	.panel { height: 290px; color:#FFFFFF}
+	.panel-header{ position: absolute; right: 200px; bottom: 20px; width:230px; text-align: right; font-size:40px; line-height: 30px; font-family: 'TheSansExtraBoldCaps';}
+	.panel-content { position: absolute; right: 20px; bottom: 18px; width:165px; font-size:14px; line-height: 15px; font-weight: normal; }
+	
+	.coda-nav { position: absolute; bottom: 10px; left: 0; z-index: 10; }
+
+/* Don't change anything below here unless you know what you're doing */
+
+	/* Tabbed nav */
+	.coda-nav ul { clear: both; display: block; margin: auto; overflow: hidden; padding: 0 0 0 20px }
+	.coda-nav ul li { display: inline }
+	.coda-nav ul li a { background: url(../clientimages/slideshow/slideshow-bullets.png) 0 0 no-repeat; color: #fff; display: block; float: left; margin-right: 5px; padding: 8px 8px; text-decoration: none }
+	
+	/* Miscellaneous */
+	.coda-slider-wrapper { clear: both; overflow: auto }
+	.coda-slider { float: left; overflow: hidden; position: relative }
+	.coda-slider .panel { display: block; float: left }
+	.coda-slider .panel-container { position: relative }
+	.coda-nav-left, .coda-nav-right { float: left }
+	.coda-nav-left a, .coda-nav-right a { display: block; text-align: center; text-decoration: none }
+	
